@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    float cs;
+    printf("Enter the comprehensive Strength\n");
+    scanf("%f",&cs);
+    if(cs>=40)
+        printf("Concrete Quality-Excellent\n");
+    else if(cs>=30 && cs<40)
+        printf("Concrete Quality-Good\n");
+    else if(cs>=20 && cs<30)
+        printf("Concrete Quality-Average\n");
+    else if(cs<20)
+        printf("Concrete Quality-poor\n");
+    else
+    printf("Invalid Input\n");
+    return 0;
+}
+
