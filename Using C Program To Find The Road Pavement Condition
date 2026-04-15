@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    float cs;
+    printf("Road Pavement Condition Index (PCI) Score(0-100):  \n");
+    scanf("%f",&cs);
+    if(cs>=85)
+        printf("Pavement Condition - Excellent\n");
+    else if(cs>=75 && cs<85)
+        printf("Pavement Condition - Good\n");
+    else if(cs>=55 && cs<70)
+        printf("Pavement Condition - Fair\n");
+    else if(cs<55 && cs==0)
+        printf("Pavement Condition - Poor\n");
+    else
+    printf("Invalid Input\n");
+    return 0;
+}
