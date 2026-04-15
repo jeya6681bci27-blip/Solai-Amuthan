@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int n=5, cp_green=5 , cp_purple=6 , tc , p[10] , i=0 , cp1=0 ,cp2=0;
+    printf("enter for each person\n 0.None 1.Problem1 solved 2.problem2 solved 3.Both solved \n");
+    for(i=0;i<n;i++)
+    scanf("%d",&p[i]);
+    for(i=0;i<n;i++)
+    {
+        if(p[i]==1)
+        cp1++;
+        else if(p[i]==2)
+        cp2++;
+        else if(p[i]==3)
+    {
+        cp1++;
+        cp2++;
+    }
+    else
+    continue;
+    }
+    tc=(cp1*cp_green)+(cp2*cp_purple);
+    printf("Total cost %d",tc);
+    return 0;
+}
