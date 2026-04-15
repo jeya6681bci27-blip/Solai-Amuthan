@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    float cs;
+    printf("Enter the Water Supply Demand(Liters/day):  \n");
+    scanf("%f",&cs);
+    if(cs<=500)
+        printf("Water Supply Demand - Low Consumption\n");
+    else if(cs>500 && cs<=1500)
+        printf("Water Supply Demand - Medium Consumption\n");
+    else if(cs>1500)
+        printf("Water Supply Demand - High Consumption\n");
+    else
+    printf("Invalid Input\n");
+    return 0;
+}
