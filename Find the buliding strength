@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    float cs;
+    printf("Enter the Crack Width of the Building:  \n");
+    scanf("%f",&cs);
+    if(cs<0.3 && cs==0)
+        printf("Building Saftey Status-Safe\n");
+    else if(cs>=0.3 && cs<=1.0)
+        printf("Building Saftey Status-Minor Repair Required\n");
+    else if(cs>1.0)
+        printf("Building Status-Major Repair Required\n");
+    else
+    printf("Invalid Input\n");
+    return 0;
+}
