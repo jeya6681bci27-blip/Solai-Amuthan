@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    // Read the two integers for the interval
+    if (scanf("%d %d", &a, &b) != 2) return 1;
+
+    // Array of strings for English representations
+    char *numbers[] = {"zero", "one", "two", "three", "four", 
+                       "five", "six", "seven", "eight", "nine"};
+
+    for (int i = a; i <= b; i++) {
+        if (i >= 1 && i <= 9) {
+            // Print lowercase English representation
+            printf("%s\n", numbers[i]);
+        } 
+        else if (i > 9) {
+            // Use modulo operator to check parity
+            if (i % 2 == 0) {
+                printf("even\n");
+            } else {
+                printf("odd\n");
+            }
+        }
+    }
+
+    return 0;
+}
