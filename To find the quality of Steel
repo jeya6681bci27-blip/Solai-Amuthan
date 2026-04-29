@@ -1,0 +1,34 @@
+)#include<stdio.h>
+int main()
+{
+    float cement_qty,steel_qty,sand_qty;
+    float cement_rate,steel_rate,sand_rate;
+    float cement_cost,steel_cost,sand_cost;
+    float total,gst,final_amount;
+    printf("Enter the cement Quantity:(Bags):");
+    scanf("%f",&cement_qty);
+    printf("Enter the cement Rate (Per bags):");
+    scanf("%f",&cement_rate);
+    printf("Enter the steel Quality(Kg):");
+    scanf("%f",&steel_qty);
+    printf("Enter the Cost of Steel(Per Kg):");
+    scanf("%f",&steel_rate);
+    printf("Enter the Sand Quantity(Per tons):");
+    scanf("%f",&sand_qty);
+    printf("Enter the Cost of Sand (Per tons):");
+    scanf("%f",&sand_rate);
+    cement_cost=cement_qty*cement_rate;
+    steel_cost=steel_qty*steel_rate;
+    sand_cost=sand_qty*steel_rate;
+    printf("Cement cost:",cement_cost);
+    printf("Steel Cost:",steel_cost);
+    printf("sand Cost:",sand_cost);
+    total=cement_cost+steel_cost+sand_cost;
+    gst=total*0.18;
+    final_amount=total+gst;
+    printf("\n Total Cost = %.2f",total);
+    printf("\nGST(18%)=%.2f",gst);
+    printf("\nFinal Final Amount=%.2f\n",final_amount);
+    return 0;
+    
+}
