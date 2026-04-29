@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int dead_load;
+    int live_load;
+    int wind_load;
+    int total_load;
+    int safe_limit=500;
+    printf("Enter the Dead Load:");
+    scanf("%d",&dead_load);
+    printf("Enter the Live Load:");
+    scanf("%d",&live_load);
+    printf("Enter the Wind Load:");
+    scanf("%d",&wind_load);
+    total_load=dead_load+live_load+wind_load;
+    printf("\n Total Load = %d",total_load);
+    if (total_load>safe_limit)
+    printf("\nLoad exceeds safe limit");
+    else
+    printf("\nLoad within the safe limit");
+    return 0;
+    } 
