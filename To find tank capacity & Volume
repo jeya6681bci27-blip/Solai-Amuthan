@@ -1,0 +1,15 @@
+#include<stdio.h>
+#define PI 3.146
+int main()
+{
+    float radius,height,volume,liters;
+    printf("enter radius (m):");
+    scanf("%f",&radius);
+    printf("enter height (m)");
+    volume=PI*radius*radius*height;
+    liters=volume*1000;
+    printf("\n tank volume=%.2f m3",volume);
+    printf("\n tank capacity=%.2f litres\n",liters);
+        return 0;
+    }
+
